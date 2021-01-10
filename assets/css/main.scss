@@ -95,13 +95,22 @@ section {
     text-align: center;
 }
 
-.featured {
+.about {
 	background: #ffffff;
 	position: relative;
 	img{
 		border-radius: 1em;
 	}
 	
+}
+
+.featured {
+	background: #ffffff;
+	position: relative;
+	img{
+		border-radius: 1em;
+	}
+
 }
 // .featured::before {
 //     content: "";

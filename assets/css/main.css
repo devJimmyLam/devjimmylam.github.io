@@ -91,6 +91,15 @@ section {
   text-align: center;
 }
 
+.about {
+  background: #ffffff;
+  position: relative;
+}
+
+.about img {
+  border-radius: 1em;
+}
+
 .featured {
   background: #ffffff;
   position: relative;
