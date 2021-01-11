@@ -38,7 +38,7 @@
                 <div class="btn-container">
                     <div class="btn-bg"></div>
                     <div class="btn-pulse">
-                        <a href="#portfolio" target="_blank">
+                        <a href="#about" target="_blank">
                             &#8711;
                         </a>
                     </div>
@@ -48,12 +48,12 @@
 		</div>
 		<svg xmlns="http://www.w3.org/2000/svg" class="hero-design" width="686" height="688" viewBox="0 0 686 688">
 			<g id="blockdesign" transform="translate(-935 -289)">
-				<rect class="square-anim" data-name="Rectangle 2" width="172" height="172" rx="19" transform="translate(1277 289)" fill="#6e00ff"/>
-				<rect class="square-anim" data-name="Rectangle 10" width="172" height="172" rx="86" transform="translate(1277 461)" fill="#ff64cb"/>
-				<rect class="square-anim" data-name="Rectangle 8" width="172" height="172" rx="19" transform="translate(1449 461)" fill="#e5d5fa"/>
-				<rect class="square-anim" data-name="Rectangle 5" width="172" height="172" rx="19" transform="translate(1277 633)" fill="#6e00ff"/>
+				<rect class="square-anim" data-name="Rectangle 2" width="172" height="172" rx="19" transform="translate(1277 289)" fill="#191417"/>
+				<rect class="square-anim" data-name="Rectangle 10" width="172" height="172" rx="86" transform="translate(1277 461)" fill="#A4161A"/>
+				<rect class="square-anim" data-name="Rectangle 8" width="172" height="172" rx="19" transform="translate(1449 461)" fill="#DE9A9C"/>
+				<rect class="square-anim" data-name="Rectangle 5" width="172" height="172" rx="19" transform="translate(1277 633)" fill="#191417"/>
 				<rect class="square-anim" data-name="Rectangle 3" width="172" height="172" rx="19" transform="translate(1107 461)" fill="#fff"/>
-				<rect class="square-anim" data-name="Rectangle 9" width="172" height="172" rx="86" transform="translate(1107 633)" fill="#00f7ff"/>
+				<rect class="square-anim" data-name="Rectangle 9" width="172" height="172" rx="86" transform="translate(1107 633)" fill="#6600ED"/>
 				<rect class="square-anim" data-name="Rectangle 7" width="172" height="172" rx="19" transform="translate(935 633)" fill="#fff" opacity="0.17"/>
 				<rect class="square-anim" data-name="Rectangle 4" width="172" height="172" rx="19" transform="translate(1107 805)" fill="#fff"/>
 			</g>
@@ -62,31 +62,37 @@
 
 
 	<!-- ABOUT -->
-    <section class="featured">
+    <section id="about" class="featured">
         <div class="left">
             <div class="inner transition2">
                 <p class="subtitle">About</p>
                 <a href="#" class="featured-title">Jimmy Lam</a>
 
-                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque molestiae, soluta autem nemo quae delectus quas? Excepturi.</p>
+                <p class="featured-desc" style="margin-bottom: -3px;">I am a former IT Auditor turned Full Stack Developer who has passion for turning ideas into reality using creative solutions with technology.</p>
+				<p class="featured-desc" style="margin-bottom: -3px;">
+					I mainly use React.js, JavaScript, Node.js, Express, and MongoDB when developing my applications, but I am always challenging myself to learn new technology and frameworks. <a href="#skills">See more skills ...</a>
+				</p>
+				<p class="featured-desc" style="margin-bottom: -3px;">
+					I'm currently seeking opportunities to be part of a talented team where I can apply my passion and contribute to build clean web and mobile applications with intuitive functionality.
+				</p>
             </div>
         </div>
-        <img class="about-img right transition2" src="assets/img/profile_lam.jpg" alt="Featured Project">
+        <img class="about-img right transition2" src="assets/img/IMG_6783.jpg" alt="Featured Project">
     </section>
 
 
 	<!-- SKILLS -->
-	<section id="skills" class="skills">
+	<section id="skills" class="skills glass-bg">
 		<p class="skills-title">Skills</p>
-		<a class="featured-title" href="#">Technologies & Tools I Use</a>
-		<div class="skills-container one">
+		<a class="featured-title skills-text"; href="#">Technologies & Tools I Use</a>
+		<div class="skills-container">
 
 			<!-- SKILLS FRONT END -->
 			<div class="skills-card transition2">
 				<div class="icon-container one">
-					<img class="src="assets/img/iconmonstr-computer-10-64.png" alt="Front-End">
+					<img src="assets/img/iconmonstr-computer-10-64.png" alt="Front-End">
 				</div>
-				<p class="skills-subtitle">Front-End</p>
+				<p class="skills-subtitle"><h3>Front-End</h3></p>
 				<div class="skills-menu">
 					<ul>
 						<li>
@@ -125,73 +131,74 @@
 
 			<!-- SKILLS BACK END -->
 			<div class="skills-card transition2">
-				<div class="icon-container two">
+				<div class="icon-container one">
 					<img src="assets/img/iconmonstr-layer-21-64.png" alt="Back-End">
 				</div>
-				<p class="skills-subtitle">Back-End</p>
-				<ul>
-					<li>
-						<small>ASP.NET Core</small>
-					</li>
-					<li>
-						<small>C#</small>
-					</li>
-					<li>
-						<small>Django</small>
-					</li>
-					<li>
-						<small>Java</small>
-					</li>
-					<li>
-						<small>JPQL</small>
-					</li>
-					<li>
-						<small>NoSQL</small>
-					</li>
-					<li>
-						<small>MongoDB</small>
-					</li>
-					<li>
-						<small>Python</small>
-					</li>
-					<li>
-						<small>SQL</small>
-					</li>
-				</ul>
+				<p class="skills-subtitle"><h3>Back-End</h3></p>
+				<div class="skills-menu">
+					<ul>
+						<li>
+							<small>ASP.Net Core</small>
+						</li>
+						<li>
+							<small>C#</small>
+						</li>
+						<li>
+							<small>Django</small>
+						</li>
+						<li>
+							<small>Java</small>
+						</li>
+						<li>
+							<small>JPQL</small>
+						</li>
+						<li>
+							<small>NoSQL</small>
+						</li>
+						<li>
+							<small>MongoDB</small>
+						</li>
+						<li>
+							<small>Python</small>
+						</li>
+						<li>
+							<small>SQL</small>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 			<!-- SKILLS TOOLS -->
 			<div class="skills-card transition2">
-				<div class="icon-container three">
+				<div class="icon-container one">
 					<img src="assets/img/iconmonstr-tools-3-64.png" alt="Tools">
 				</div>
-				<p class="skills-subtitle">DevTools</p>
-				<ul>
-					<li>
-						<small>AWS (EC2)</small>
-					</li>
-					<li>
-						<small>Bash</small>
-					</li>
-					<li>
-						<small>Git & Github</small>
-					</li>
-					<li>
-						<small>MAMP</small>
-					</li>
-					<li>
-						<small>MySQL</small>
-					</li>
-					<li>
-						<small>PostMan</small>
-					</li>
-					<li>
-						<small>Spring Tool Suite</small>
-					</li>
-					<li>
-						<small>VS Code</small>
-					</li>
-				</ul>
+				<p class="skills-subtitle"><h3>DevTools</h3></p>
+				<div class="skills-menu">
+					<ul>
+						<li>
+							<small>AWS (EC2)</small>
+						</li>
+						<li>
+							<small>Bash</small>
+						</li>
+						<li>
+							<small>Git & Github</small>
+						</li>
+						<li>
+							<small>MAMP</small>
+						</li>
+						<li>
+							<small>PostMan</small>
+						</li>
+						<li>
+							<small>Spring Tool Suite</small>
+						</li>
+						<li>
+							<small>VS Code</small>
+						</li>
+					</ul>
+				</div>
 			</div>
 	</section>
 
@@ -234,7 +241,25 @@
             <a href="#"><img src="assets/img/fretty.jpg"Fretastic"></a>
         </div>
 
-    </section>
+	</section>
+	
+	<section id="contact" class="skills">
+		<p class="skills-title">Contact</p>
+		<a class="featured-title skills-text"; href="#">Get In Touch</a>
+		<div class="skills-container">
+
+		<div class="skills-card transition2">
+			<div class="icon-container">
+				<p class="featured-desc" style="margin-bottom: -3px;">
+					I'm currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+				</p>
+				<a class="email-link" href="mailto:dev.jimmylam@gmail.com"><img src="assets/img/" alt="" srcset="">Email</a>
+			</div>
+			
+		</div>
+
+			
+	</section>
 
 
 	<!--  SCRIPTS -->

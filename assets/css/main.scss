@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
 //save colors as a variable  object.
 $colors: (
-	primary: #6700EE,
-	primary-light: lighten(#6700EE, 10%),
-    primary-dark: darken(#6700EE, 30%),
-	secondary:white,
-	secondary-light: lighten(white, 10%),
-    secondary-dark: darken(white, 40%),
-	accent: #0271E3,
+	primary: #0b090a,
+	primary-light:lighten(#0b090a, 5%),
+	secondary:#f5f3f4,
+	accent: #ba181b,
 );
 //function to call colors()
 @function color($color-name) {
@@ -17,7 +15,8 @@ $colors: (
 body {
 	height: 100vh;
 	margin: 0;
-	font-family: 'Montserrat', arial;
+    font-family: 'Montserrat','Lato', Arial, Helvetica, sans-serif;
+    background: color(secondary);
 }
 
 ul {
@@ -34,10 +33,10 @@ img {
 }
 
 .nav-container {
-    background: color(primary-dark);
+    background: color(primary);
 
     a {
-        color: white;
+        color: color(secondary);
     }
 }
 header {
@@ -66,11 +65,14 @@ header {
 }
 
 .hero {
-    background: color(primary);
-    color: white;
+    background: color(primary-light);
+    color: color(secondary);
     display: grid;
     text-align: center;
     padding: 4em;
+    h1{
+        color: color(accent);
+    }
 }
 
 .meet{
@@ -138,7 +140,7 @@ header {
 
 section {
     padding: 4em 2em;
-    text-align: center;
+	text-align: center;
 }
 
 
@@ -150,18 +152,23 @@ section {
 }
 
 .featured {
-	background: #ffffff;
-	position: relative;
+	background:color(secondary);
+    position: relative;
+
 	img{
 		border-radius: 1em;
-	}
+    }
+    a b{
+        color: color(accent);
+        text-decoration: none;
+    }
 
 }
 
 .subtitle{
     text-transform: uppercase;
     font-weight: bold;
-    color:  color(primary);
+    color:  color(accent);
     letter-spacing: .2em;
     font-size: .85em;
 }
@@ -184,10 +191,13 @@ section {
 
 .skills {
 	background: color(primary-light);
+	.skills-text{
+		color: color(secondary);
+	}
 	.skills-title{
 		text-transform: uppercase;
 		font-weight: bold;
-		color:  white;
+		color: color(accent);
 		letter-spacing: .2em;
 		font-size: .85em;
 	}
@@ -198,7 +208,7 @@ section {
     padding: 2em;
 
 	.skills-card{
-		background: #F7F7F7;
+		background: color(secondary);
 		padding: 2em;
 		border-radius: 1em;
 		margin-bottom: 2em;
@@ -211,7 +221,6 @@ section {
 			display: grid;
 			place-content: center;
 			margin: 0 auto;
-	
 			&.one {
 				width: 100px;
 			}
@@ -232,8 +241,10 @@ section {
 	}
 }
 
+
+
 .portfolio {
-    background: #F7F7F7;
+    background: color(secondary);
 }
 
 .portfolio-container a img {
@@ -293,7 +304,7 @@ section {
         background: unset;
 
         header {
-            background:  color(primary-dark);
+            background:  color(primary);
         }
     }
     header {
@@ -328,7 +339,7 @@ section {
         padding: 0;
 
         .content {
-            background: color(primary);
+            background: color(primary-light);
             padding: 6em 8em 6em 4em;
             text-align: left;
 
