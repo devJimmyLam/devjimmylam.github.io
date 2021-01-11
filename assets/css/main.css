@@ -43,6 +43,7 @@ header .logo {
   color: white;
   font-weight: bold;
   font-size: 1em;
+  text-transform: uppercase;
 }
 
 header ul {
@@ -70,7 +71,7 @@ header ul a {
 }
 
 .hero h1 {
-  color: #ba181b;
+  color: #0165FF;
 }
 
 .meet {
@@ -99,7 +100,7 @@ header ul a {
 .meet .btn-container .btn-bg {
   -webkit-animation: pulse 1.2s ease infinite;
           animation: pulse 1.2s ease infinite;
-  background: #ba181b;
+  background: #0165FF;
 }
 
 .meet .btn-container .btn-pulse {
@@ -115,7 +116,7 @@ header ul a {
   position: absolute;
   z-index: 99;
   border: none;
-  background: #ba181b;
+  background: #0165FF;
   background-size: 18px;
   cursor: pointer;
   outline: none;
@@ -158,9 +159,10 @@ header ul a {
 }
 
 .meet p {
+  width: 200px;
   margin-top: 1em;
-  margin-left: 4em;
-  text-transform: lowercase;
+  margin-left: 3em;
+  font-weight: lighter;
 }
 
 section {
@@ -185,14 +187,14 @@ section {
 }
 
 .featured a b {
-  color: #ba181b;
+  color: #0165FF;
   text-decoration: none;
 }
 
 .subtitle {
   text-transform: uppercase;
   font-weight: bold;
-  color: #ba181b;
+  color: #0165FF;
   letter-spacing: .2em;
   font-size: .85em;
 }
@@ -224,7 +226,7 @@ section {
 .skills .skills-title {
   text-transform: uppercase;
   font-weight: bold;
-  color: #ba181b;
+  color: #0165FF;
   letter-spacing: .2em;
   font-size: .85em;
 }
@@ -283,6 +285,9 @@ section {
 }
 
 @media only screen and (min-width: 800px) {
+  .meet p {
+    margin-left: 4em;
+  }
   .featured, .portfolio {
     text-align: left;
   }
@@ -324,6 +329,9 @@ section {
 @media only screen and (min-width: 1050px) {
   .hero {
     height: 90vh;
+  }
+  .hero .meet p {
+    margin-left: 4.5em;
   }
   .nav-container {
     display: -ms-grid;

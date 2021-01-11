@@ -5,7 +5,7 @@ $colors: (
 	primary: #0b090a,
 	primary-light:lighten(#0b090a, 5%),
 	secondary:#f5f3f4,
-	accent: #ba181b,
+	accent: #0165FF,
 );
 //function to call colors()
 @function color($color-name) {
@@ -47,7 +47,8 @@ header {
     .logo {
         color: white;
 		font-weight: bold;
-		font-size: 1em;
+        font-size: 1em;
+        text-transform: uppercase;
     }
 
     ul {
@@ -132,9 +133,10 @@ header {
 		}
 	}
 	p{
-		margin-top: 1em;
-		margin-left: 4em;
-		text-transform: lowercase;
+        width: 200px;
+        margin-top: 1em;
+		margin-left: 3em;
+		font-weight: lighter ;
 	}
 }
 
@@ -254,6 +256,11 @@ section {
 
 @media only screen and (min-width: 800px) {
 
+    .meet {
+        p {
+            margin-left: 4em;
+        }
+    }
     .featured, .portfolio {
         text-align: left;
     }
@@ -296,6 +303,11 @@ section {
 @media only screen and (min-width: 1050px) {
     .hero {
         height: 90vh;
+        .meet {
+            p {
+                margin-left: 4.5em;
+            }
+        }
     }
 
     .nav-container {
