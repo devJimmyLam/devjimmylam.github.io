@@ -34,7 +34,7 @@
 	<div class="hero">
 		<div class="content">
 			<h4 class="stagger1">Full Stack Web Developer</h4>
-			<h1 class="stagger1">Let's build something together.</h1>
+			<h1 class="stagger1">I bring your projects to life</h1>
             <div class="meet stagger1">
                 <div class="btn-container stagger1">
                     <div class="btn-bg"></div>
@@ -68,7 +68,7 @@
             <div class="inner transition2">
                 <p class="subtitle">About</p>
 				<p class="featured-title">Jimmy Lam</p>
-                <p class="featured-desc mt-3">I am a former IT Auditor turned Full Stack Developer who has passion for turning ideas into reality using creative solutions with technology.</p>
+                <p class="featured-desc mt-3">I am a former IT Security & Compliance Analyst turned Full Stack Developer who has passion for turning ideas into reality using creative solutions with technology.</p>
 				<p class="featured-desc ">
 					I mainly use React.js, JavaScript, Node.js, Express, and MongoDB when developing my applications, but I am always challenging myself to learn new technology and frameworks. <a href="#skills">See more skills ...</a>
 				</p>
@@ -204,10 +204,12 @@
 
 	<!-- PORTFOLIO -->
 	<section id="portfolio" class="portfolio">
+		<p class="skills-title transition3 text-center" style="color:#0165FF"><b>Portfolio</b></p>
+		<p class="featured-title text-dark transition3 text-center" style="margin-bottom: 100px;">A selection of my lastest projects</p>
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Guitar App</p>
+                    <p class="subtitle" style="color:#6600ED;">Guitar App</p>
 
 					<p class="featured-title">Fretastic.com</p>
 					<div class="portfolio-btn-container">
@@ -223,7 +225,7 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Guitar App</p>
+                    <p class="subtitle" style="color:#6600ED">Guitar App</p>
 
 					<p class="featured-title">Fretastic.com</p>
 					<div class="portfolio-btn-container">
@@ -239,7 +241,7 @@
         <div class="portfolio-container transition3">
             <div class="portfolio-left">
                 <div class="inner">
-                    <p class="subtitle">Guitar App</p>
+                    <p class="subtitle" style="color:#6600ED">Guitar App</p>
 					<p class="featured-title">Fretastic.com</p>
 					<div class="portfolio-btn-container">
 						<a title="Live Demo" type="button" class="featured-desc btn-portfolio" href="https://github.com/devJimmyLam/TicketTracker">Demo</a>
@@ -275,32 +277,35 @@
 			</ul>
 		</div>
 		<div class="contact-container">
-			<form method="POST" action="https://formspree.io/xlepbqkj" role="form" class="php-email-form">
-				<div class="form-row">
-					<div class="col-md-6 form-group">
-						<input type="text" name="name" class="form-control input-name" id="name" placeholder="Your Name"
-						data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-						<div class="validate text-danger font-weight-bold"></div>
-					</div>
-					<div class="col-md-6 form-group">
-						<input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-						data-rule="email" data-msg="Please enter a valid email" />
-						<div class="validate text-danger font-weight-bold"></div>
-					</div>
+			<form method="POST" action="https://formspree.io/f/xqkgwwwz" role="form" class="php-email-form">
+			<div class="form-row">
+				<div class="col-md-6 form-group">
+					<input type="text" name="name" class="form-control input-name" id="name" placeholder="Your Name"
+					data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+					<div class="validate"></div>
 				</div>
-				<div class="form-group">
-					<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-						data-rule="minlen:4" data-msg="Please enter at least 4 chars of subject" />
-					<div class="validate text-danger font-weight-bold"></div>
+				<div class="col-md-6 form-group">
+					<input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+					data-rule="email" data-msg="Please enter a valid email" />
+					<div class="validate"></div>
 				</div>
-				<div class="form-group">
-					<textarea class="form-control" name="message" rows="5" data-rule="required"
-						data-msg="Please write something" placeholder="Message"></textarea>
-					<div class="validate text-danger font-weight-bold"></div>
-				</div>
-				<div class="text-center">
-					<button class="btn btn-primary"type="submit">Send Message</button>
-				</div>
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+				data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+				<div class="validate"></div>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" name="message" rows="5" data-rule="required"
+				data-msg="Please write something" placeholder="Message"></textarea>
+				<div class="validate"></div>
+			</div>
+			<div class="mb-3">
+				<div class="loading">Loading</div>
+				<div class="error-message"></div>
+				<div class="sent-message">Your message has been sent. Thank you!</div>
+			</div>
+				<div class="text-center"><button type="submit">Send Message</button></div>
 			</form>
 		</div>
 	</section>
