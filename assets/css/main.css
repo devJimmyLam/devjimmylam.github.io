@@ -46,17 +46,6 @@ header .logo {
   text-transform: uppercase;
 }
 
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-header ul a {
-  display: block;
-  padding: 0 1em;
-}
-
 .social-header, .hero-design {
   display: none;
 }
@@ -72,6 +61,7 @@ header ul a {
 
 .hero h1 {
   color: #b3a8ad;
+  letter-spacing: -3px;
 }
 
 .hero h4 {
@@ -225,6 +215,10 @@ section {
 }
 
 .featured-list {
+  color: #8a8585;
+  font-size: .9em;
+  line-height: 1.8em;
+  font-weight: 500;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(160px, 200px))[2];
@@ -490,7 +484,37 @@ section {
   padding: 0 1em;
 }
 
+@media only screen and (min-width: 400px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2em;
+  }
+  header .logo {
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header ul a {
+    display: block;
+    padding: 0 1em;
+  }
+}
+
 @media only screen and (min-width: 800px) {
+  .hero h1 {
+    letter-spacing: 3px;
+  }
   .meet p {
     margin-left: 4em;
   }

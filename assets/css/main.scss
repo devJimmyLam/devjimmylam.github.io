@@ -60,17 +60,29 @@ header {
         text-transform: uppercase;
     }
 
-    ul {
-        display: flex;
-
-        a {
-            display: block;
-            padding: 0 1em;
-
-        }
-    }
-
 }
+
+// header {
+//     .logo {
+//         color: white;
+// 		font-weight: bold;
+//         font-size: 1em;
+//         text-transform: uppercase;
+//     }
+
+//     ul {
+//         display: flex;
+
+//         a {
+//             display: block;
+//             padding: 0 1em;
+
+//         }
+//     }
+
+// }
+
+
 .social-header, .hero-design {
     display: none;
 }
@@ -83,7 +95,7 @@ header {
     padding: 4em;
     h1{
         color: color(secondary-dark);
-
+        letter-spacing: -3px;
     }
     h4{
         color: color(secondary);
@@ -212,6 +224,10 @@ section {
 
 }
 .featured-list{
+    color: #8a8585;
+    font-size: .9em;
+    line-height: 1.8em;
+    font-weight: 500;
     display: grid;
     grid-template-columns: repeat(2, minmax(160px, 200px));
     text-align: left;
@@ -447,8 +463,60 @@ section {
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 400px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 2em;
+    
+        .logo {
+            color: white;
+            font-weight: bold;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+    
+        ul {
+            display: flex;
+    
+            a {
+                display: block;
+                padding: 0 1em;
+    
+            }
+        }
+    
+    }
+}
 
+@media only screen and (min-width: 800px) {
+    // header {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     padding: 2em;
+    
+    //     .logo {
+    //         color: white;
+    //         font-weight: bold;
+    //         font-size: 1em;
+    //         text-transform: uppercase;
+    //     }
+    
+    //     ul {
+    //         display: flex;
+    
+    //         a {
+    //             display: block;
+    //             padding: 0 1em;
+    
+    //         }
+    //     }
+    
+    // }
+
+    .hero h1{
+        letter-spacing: 3px;
+    }
     .meet {
         p {
             margin-left: 4em;
