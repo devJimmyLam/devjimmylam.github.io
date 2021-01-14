@@ -11,7 +11,8 @@ $colors: (
     accent-dark:darken(#0165FF, 20%),
     btn:#6600ED,
     btn-dark: darken(#6600ED, 20%),
-    last:lighten(#505fc4, 20%),
+    btn-light: lighten(#6600ED, 10%),
+
     
 
 );
@@ -160,7 +161,7 @@ header {
 
 section {
     padding: 4em 2em;
-	text-align: center;
+	text-align: left;
 }
 
 
@@ -212,9 +213,10 @@ section {
 }
 .featured-list{
     display: grid;
-    grid-template-columns: repeat(2, minmax(100px, 200px));
+    grid-template-columns: repeat(2, minmax(160px, 200px));
     text-align: left;
     margin: 1em;
+    list-style-type: circle;
 }
 
 
@@ -232,91 +234,93 @@ section {
 	}
 }
 
-
-.skills-container {
-    padding: 2em;
-
-	.skills-card{
-		background: color(secondary);
-		padding: 2em;
-		border-radius: 1em;
-        margin-bottom: 2em;
-        box-shadow: inset 0 0 10px color(accent-secondary);
-		ul li{
-			margin: 0;
-			padding: 0;
-		}
-		.icon-container {
-			height: 100px;
-			display: grid;
-			place-content: center;
-			margin: 0 auto;
-			&.one {
-				width: 100px;
-			}
-			&.two {
-				width: 100px;
-			}
-			&.three {
-				width: 100px;
-			}
-		}
-	
-		.skills-subtitle {
-			font-weight: bold;
-		}
-		.featured-desc {
-			margin-bottom: 2em;
-		}
-	}
+.skills{
+    text-align: center;
+    .skills-container {
+        padding: 2em;
+    
+        .skills-card{
+            background: color(secondary);
+            padding: 2em;
+            border-radius: 1em;
+            margin-bottom: 2em;
+            box-shadow: inset 0 0 10px color(accent-secondary);
+            ul li{
+                margin: 0;
+                padding: 0;
+            }
+            .icon-container {
+                height: 100px;
+                display: grid;
+                place-content: center;
+                margin: 0 auto;
+                &.one {
+                    width: 100px;
+                }
+                &.two {
+                    width: 100px;
+                }
+                &.three {
+                    width: 100px;
+                }
+            }
+        
+            .skills-subtitle {
+                font-weight: bold;
+            }
+            .featured-desc {
+                margin-bottom: 2em;
+            }
+        }
+    }
 }
+
 
 
 
 .portfolio {
     background: color(secondary);
-}
-
-.portfolio-container {
-    border-radius: 1em;
-    margin-bottom: 2em;
-    img{
+    .portfolio-container {
         border-radius: 1em;
-        padding: 50px;
-        transition: transform .2s;
-        margin: 0 auto;
+        margin-bottom: 2em;
+        .portfolio-btn-container{
+            margin-bottom: 1.5em;
+        
+            .btn-portfolio{
+                background:color(btn);
+                color: color(secondary);
+                padding : 5px 10px;
+                border-style: solid;
+                border-radius: .5em;
+                border-width : 1px;
+                border-color : color(btn);
+                text-decoration : none;
+                margin-right: 1em;
+                margin-bottom: 1em;
+                box-shadow: 5px 5px 10px rgb(84, 91, 133);
+                width: fit-content;
+            }
+            .btn-portfolio:hover{
+                background:color(btn-dark);
+                color: color(secondary);
+                border-color : color(btn-dark);
+                text-decoration: none;
+                box-shadow: 5px 5px 10px rgb(84, 91, 133);
+            }
+        }
+        img{
+            border-radius: 1em;
+            padding: 50px;
+            transition: transform .2s;
+            margin: 0 auto;
+        }
+        img:hover {
+        transform: scale(1.5);
+        }
         
     }
-    img:hover {
-    transform: scale(1.5);
-    }
-    
 }
-.portfolio-btn-container{
-    margin-bottom: 1.5em;
 
-    .btn-portfolio{
-        background:color(btn);
-        color: color(secondary);
-        padding : 5px 10px;
-        border-style: solid;
-        border-radius: .5em;
-        border-width : 1px;
-        border-color : color(btn);
-        text-decoration : none;
-        margin-right: 1em;
-        margin-bottom: 1em;
-        box-shadow: 5px 5px 10px rgb(84, 91, 133);
-        width: fit-content;
-    }
-    .btn-portfolio:hover{
-        background:color(btn-dark);
-        color: color(secondary);
-        border-color : color(btn-dark);
-		text-decoration: none;
-		box-shadow: 5px 5px 10px rgb(84, 91, 133);
-    }
-}
 
 .contact-container .php-email-form {
     width: 100%;

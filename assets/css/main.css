@@ -176,7 +176,7 @@ header ul a {
 
 section {
   padding: 4em 2em;
-  text-align: center;
+  text-align: left;
 }
 
 .about-img {
@@ -227,10 +227,11 @@ section {
 .featured-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(100px, 200px))[2];
-      grid-template-columns: repeat(2, minmax(100px, 200px));
+  -ms-grid-columns: (minmax(160px, 200px))[2];
+      grid-template-columns: repeat(2, minmax(160px, 200px));
   text-align: left;
   margin: 1em;
+  list-style-type: circle;
 }
 
 .skills {
@@ -249,11 +250,15 @@ section {
   font-size: .85em;
 }
 
-.skills-container {
+.skills {
+  text-align: center;
+}
+
+.skills .skills-container {
   padding: 2em;
 }
 
-.skills-container .skills-card {
+.skills .skills-container .skills-card {
   background: #f5ebf0;
   padding: 2em;
   border-radius: 1em;
@@ -262,12 +267,12 @@ section {
           box-shadow: inset 0 0 10px;
 }
 
-.skills-container .skills-card ul li {
+.skills .skills-container .skills-card ul li {
   margin: 0;
   padding: 0;
 }
 
-.skills-container .skills-card .icon-container {
+.skills .skills-container .skills-card .icon-container {
   height: 100px;
   display: -ms-grid;
   display: grid;
@@ -275,23 +280,23 @@ section {
   margin: 0 auto;
 }
 
-.skills-container .skills-card .icon-container.one {
+.skills .skills-container .skills-card .icon-container.one {
   width: 100px;
 }
 
-.skills-container .skills-card .icon-container.two {
+.skills .skills-container .skills-card .icon-container.two {
   width: 100px;
 }
 
-.skills-container .skills-card .icon-container.three {
+.skills .skills-container .skills-card .icon-container.three {
   width: 100px;
 }
 
-.skills-container .skills-card .skills-subtitle {
+.skills .skills-container .skills-card .skills-subtitle {
   font-weight: bold;
 }
 
-.skills-container .skills-card .featured-desc {
+.skills .skills-container .skills-card .featured-desc {
   margin-bottom: 2em;
 }
 
@@ -299,31 +304,16 @@ section {
   background: #f5ebf0;
 }
 
-.portfolio-container {
+.portfolio .portfolio-container {
   border-radius: 1em;
   margin-bottom: 2em;
 }
 
-.portfolio-container img {
-  border-radius: 1em;
-  padding: 50px;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
-  margin: 0 auto;
-}
-
-.portfolio-container img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-
-.portfolio-btn-container {
+.portfolio .portfolio-container .portfolio-btn-container {
   margin-bottom: 1.5em;
 }
 
-.portfolio-btn-container .btn-portfolio {
+.portfolio .portfolio-container .portfolio-btn-container .btn-portfolio {
   background: #6600ED;
   color: #f5ebf0;
   padding: 5px 10px;
@@ -341,13 +331,28 @@ section {
   width: fit-content;
 }
 
-.portfolio-btn-container .btn-portfolio:hover {
+.portfolio .portfolio-container .portfolio-btn-container .btn-portfolio:hover {
   background: #3a0087;
   color: #f5ebf0;
   border-color: #3a0087;
   text-decoration: none;
   -webkit-box-shadow: 5px 5px 10px #545b85;
           box-shadow: 5px 5px 10px #545b85;
+}
+
+.portfolio .portfolio-container img {
+  border-radius: 1em;
+  padding: 50px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  margin: 0 auto;
+}
+
+.portfolio .portfolio-container img:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .contact-container .php-email-form {
