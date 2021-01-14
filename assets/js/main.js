@@ -1,6 +1,9 @@
 
+$(window).load(function() {
+	$('.preloader').fadeOut('slow');
+});
+
 gsap.registerPlugin(ScrollTrigger);
-var tl = gsap.timeline();
 
 tl.from('.content', {
 	y: '-30%',
