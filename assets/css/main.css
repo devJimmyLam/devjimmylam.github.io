@@ -29,6 +29,11 @@ img {
   color: #f5ebf0;
 }
 
+.nav-container a:hover {
+  color: #0165FF;
+  text-decoration: underline;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,6 +265,11 @@ section {
           box-shadow: inset 0 0 10px;
 }
 
+.skills .skills-container .skills-card .icon {
+  color: #6600ED;
+  font-size: 32px;
+}
+
 .skills .skills-container .skills-card ul li {
   margin: 0;
   padding: 0;
@@ -287,6 +297,8 @@ section {
 
 .skills .skills-container .skills-card .skills-subtitle {
   font-weight: bold;
+  font-size: 20px;
+  color: #3a0087;
 }
 
 .skills .skills-container .skills-card .featured-desc {
@@ -306,31 +318,26 @@ section {
   margin-bottom: 1.5em;
 }
 
-.portfolio .portfolio-container .portfolio-btn-container .btn-portfolio {
-  background: #6600ED;
+.portfolio .portfolio-container .portfolio-btn-container .button-portfolio {
+  background: #3a0087;
   color: #f5ebf0;
   padding: 5px 10px;
   border-style: solid;
   border-radius: .5em;
   border-width: 1px;
-  border-color: #6600ED;
+  border-color: #3a0087;
   text-decoration: none;
   margin-right: 1em;
-  margin-bottom: 1em;
-  -webkit-box-shadow: 5px 5px 10px #545b85;
-          box-shadow: 5px 5px 10px #545b85;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.portfolio .portfolio-container .portfolio-btn-container .btn-portfolio:hover {
-  background: #3a0087;
+.portfolio .portfolio-container .portfolio-btn-container .button-portfolio:hover {
+  background: #8121ff;
   color: #f5ebf0;
-  border-color: #3a0087;
+  border-color: #8121ff;
   text-decoration: none;
-  -webkit-box-shadow: 5px 5px 10px #545b85;
-          box-shadow: 5px 5px 10px #545b85;
 }
 
 .portfolio .portfolio-container img {
