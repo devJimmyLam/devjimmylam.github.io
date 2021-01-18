@@ -305,6 +305,18 @@ section {
   margin-bottom: 2em;
 }
 
+.skills .skills-container .skills-card:hover {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  top: -4px;
+  background-color: #8121ff;
+  color: #f5ebf0;
+}
+
+.skills .skills-container .skills-card:hover .icon, .skills .skills-container .skills-card:hover .skills-subtitle {
+  color: #f5ebf0;
+}
+
 .portfolio {
   background: #f5ebf0;
 }
@@ -482,6 +494,7 @@ section {
   border-radius: 50%;
   right: 15px;
   bottom: 15px;
+  opacity: .5;
   -webkit-transition: background 0.5s;
   transition: background 0.5s;
   z-index: 11;
@@ -490,6 +503,10 @@ section {
 .back-to-top i {
   padding: 12px;
   color: #fff;
+}
+
+.back-to-top:hover {
+  opacity: 1;
 }
 
 /* Prelaoder */
@@ -586,6 +603,12 @@ section {
   header ul a {
     display: block;
     padding: 0 1em;
+  }
+  .skills-card {
+    margin-right: 2em;
+  }
+  .skills-card:last-child {
+    margin-right: 0 !important;
   }
 }
 

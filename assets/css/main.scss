@@ -266,7 +266,6 @@ section {
                     width: 100px;
                 }
             }
-        
             .skills-subtitle {
                 font-weight: bold;
                 font-size: 20px;
@@ -274,6 +273,15 @@ section {
             }
             .featured-desc {
                 margin-bottom: 2em;
+            }
+        }
+        .skills-card:hover{
+            transition: all 0.2s ease-out;
+            top: -4px;
+            background-color: color(btn-light);
+            color: color(secondary);
+            .icon, .skills-subtitle{
+                color: color(secondary);
             }
         }
     }
@@ -448,6 +456,7 @@ section {
     border-radius: 50%;
     right: 15px;
     bottom: 15px;
+    opacity: .5;
     transition: background 0.5s;
     z-index: 11;
     i{
@@ -455,6 +464,9 @@ section {
         color: #fff;
     }
 
+}
+.back-to-top:hover{
+    opacity: 1;
 }
 
   /* Prelaoder */
@@ -548,7 +560,12 @@ section {
     
             }
         }
-    
+    }
+    .skills-card{
+        margin-right: 2em;
+    }
+    .skills-card:last-child{
+        margin-right:0 !important; 
     }
 }
 
