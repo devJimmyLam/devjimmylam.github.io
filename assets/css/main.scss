@@ -219,7 +219,8 @@ section {
 
 
 .skills {
-	background: color(primary-light);
+    background: color(primary-light);
+    height: auto;
 	.skills-text{
 		color: color(secondary);
 	}
@@ -756,3 +757,4 @@ section {
         transform: translate(262px, 830px);
     }
 }
+

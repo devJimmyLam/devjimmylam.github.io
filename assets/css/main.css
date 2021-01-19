@@ -234,6 +234,7 @@ section {
 
 .skills {
   background: #191417;
+  height: auto;
 }
 
 .skills .skills-text {
