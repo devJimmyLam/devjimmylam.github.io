@@ -249,6 +249,10 @@ section {
   font-size: .85em;
 }
 
+#skills {
+  margin: 1em;
+}
+
 .skills {
   text-align: center;
 }
@@ -380,6 +384,10 @@ section {
   text-align: left;
   list-style-type: circle;
   margin-left: 1em;
+}
+
+#contact {
+  margin-top: 1em;
 }
 
 .contact-container .php-email-form {
