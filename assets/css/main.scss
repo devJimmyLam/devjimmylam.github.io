@@ -203,7 +203,6 @@ section {
     font-size: .9em;
     line-height: 1.8em;
     font-weight: 500;
-
 }
 .featured-list{
     color: #8a8585;
@@ -296,6 +295,9 @@ section {
     .portfolio-container {
         border-radius: 1em;
         margin-bottom: 2em;
+        .ul{
+            line-style: circle;
+        }
         .portfolio-btn-container{
             margin-bottom: 1.5em;
         
@@ -332,6 +334,15 @@ section {
         }
         
     }
+}
+.portfolio-list{
+    color: #8a8585;
+    font-size: .8em;
+    line-height: 1.8em;
+    font-weight: 500;
+    text-align: left;
+    list-style-type: circle;
+    margin-left: 1em;
 }
 
 

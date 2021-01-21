@@ -327,6 +327,10 @@ section {
   margin-bottom: 2em;
 }
 
+.portfolio .portfolio-container .ul {
+  line-style: circle;
+}
+
 .portfolio .portfolio-container .portfolio-btn-container {
   margin-bottom: 1.5em;
 }
@@ -366,6 +370,16 @@ section {
 .portfolio .portfolio-container img:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.portfolio-list {
+  color: #8a8585;
+  font-size: .8em;
+  line-height: 1.8em;
+  font-weight: 500;
+  text-align: left;
+  list-style-type: circle;
+  margin-left: 1em;
 }
 
 .contact-container .php-email-form {
