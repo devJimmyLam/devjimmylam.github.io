@@ -165,12 +165,20 @@ header .logo {
   margin-top: 1em;
   margin-left: 3em;
   color: #b3a8ad;
-  font-weight: lighter;
+  font-weight: bolder;
 }
 
 section {
   padding: 4em 2em;
   text-align: left;
+}
+
+.skills-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #0165FF;
+  letter-spacing: .2em;
+  font-size: .85em;
 }
 
 .about-img {
@@ -332,7 +340,7 @@ section {
 }
 
 .portfolio .portfolio-container .ul {
-  line-style: circle;
+  line-style-type: circle;
 }
 
 .portfolio .portfolio-container .portfolio-btn-container {
@@ -361,7 +369,11 @@ section {
   text-decoration: none;
 }
 
-.portfolio .portfolio-container img {
+.portfolio .portfolio-container a {
+  margin-left: -1em;
+}
+
+.portfolio .portfolio-container a img {
   border-radius: 1em;
   padding: 50px;
   -webkit-transition: -webkit-transform .2s;
@@ -371,9 +383,10 @@ section {
   margin: 0 auto;
 }
 
-.portfolio .portfolio-container img:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+.portfolio .portfolio-container a img:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  margin-bottom: 1em;
 }
 
 .portfolio-list {

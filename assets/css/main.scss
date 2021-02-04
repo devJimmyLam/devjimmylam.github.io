@@ -149,7 +149,7 @@ header {
         margin-top: 1em;
         margin-left: 3em;
         color: color(secondary-dark);
-		font-weight: lighter ;
+		font-weight: bolder;
 	}
 }
 
@@ -158,7 +158,13 @@ section {
 	text-align: left;
 }
 
-
+.skills-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: color(accent);
+    letter-spacing: .2em;
+    font-size: .85em;
+}
 .about-img{
     position: relative;
 	height: 350px;
@@ -299,7 +305,7 @@ section {
         border-radius: 1em;
         margin-bottom: 2em;
         .ul{
-            line-style: circle;
+            line-style-type: circle;
         }
         .portfolio-btn-container{
             margin-bottom: 1.5em;
@@ -326,15 +332,20 @@ section {
                 // box-shadow: 5px 5px 10px rgb(84, 91, 133);
             }
         }
-        img{
-            border-radius: 1em;
-            padding: 50px;
-            transition: transform .2s;
-            margin: 0 auto;
+        a{
+            margin-left: -1em;
+            img{
+                border-radius: 1em;
+                padding: 50px;
+                transition: transform .2s;
+                margin: 0 auto;
+            }
+            img:hover {
+            transform: scale(2);
+            margin-bottom: 1em;
+            }
         }
-        img:hover {
-        transform: scale(1.5);
-        }
+
         
     }
 }
