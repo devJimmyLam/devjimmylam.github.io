@@ -12,14 +12,7 @@ $('.back-to-top').click(function () {
 	return false;
 });
 
-// Preloader
-$(window).on('load', function () {
-	if ($('#preloader').length) {
-		$('#preloader').delay(1200).fadeOut('slow', function () {
-			$(this).remove();
-		});
-	}
-});
+
 
 gsap.registerPlugin(ScrollTrigger);
 var tl = gsap.timeline();
